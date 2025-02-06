@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Tanushri Portfolio</title>
+        <title>Tanushri Dhote</title>
 
         <meta name="description" content>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +15,7 @@
         <link rel="stylesheet" href="css/fontAwesome.css">
         <link rel="stylesheet" href="css/light-box.css">
         <link rel="stylesheet" href="css/templatemo-main.css">
+        <link rel="icon" type="image/png" href="./img/profile.JPG">
 
         <link
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800"
@@ -29,13 +31,16 @@
             <div class="seq-preloader">
                 <svg width="39" height="16" viewBox="0 0 39 16"
                     xmlns="http://www.w3.org/2000/svg"
-                    class="seq-preload-indicator"><g fill="#F96D38"><path
-                            class="seq-preload-circle seq-preload-circle-1"
-                            d="M3.999 12.012c2.209 0 3.999-1.791 3.999-3.999s-1.79-3.999-3.999-3.999-3.999 1.791-3.999 3.999 1.79 3.999 3.999 3.999z" /><path
-                            class="seq-preload-circle seq-preload-circle-2"
-                            d="M15.996 13.468c3.018 0 5.465-2.447 5.465-5.466 0-3.018-2.447-5.465-5.465-5.465-3.019 0-5.466 2.447-5.466 5.465 0 3.019 2.447 5.466 5.466 5.466z" /><path
-                            class="seq-preload-circle seq-preload-circle-3"
-                            d="M31.322 15.334c4.049 0 7.332-3.282 7.332-7.332 0-4.049-3.282-7.332-7.332-7.332s-7.332 3.283-7.332 7.332c0 4.05 3.283 7.332 7.332 7.332z" /></g></svg>
+                    class="seq-preload-indicator">
+                    <g fill="#F96D38">
+                        <path class="seq-preload-circle seq-preload-circle-1"
+                            d="M3.999 12.012c2.209 0 3.999-1.791 3.999-3.999s-1.79-3.999-3.999-3.999-3.999 1.791-3.999 3.999 1.79 3.999 3.999 3.999z" />
+                        <path class="seq-preload-circle seq-preload-circle-2"
+                            d="M15.996 13.468c3.018 0 5.465-2.447 5.465-5.466 0-3.018-2.447-5.465-5.465-5.465-3.019 0-5.466 2.447-5.466 5.465 0 3.019 2.447 5.466 5.466 5.466z" />
+                        <path class="seq-preload-circle seq-preload-circle-3"
+                            d="M31.322 15.334c4.049 0 7.332-3.282 7.332-7.332 0-4.049-3.282-7.332-7.332-7.332s-7.332 3.283-7.332 7.332c0 4.05 3.283 7.332 7.332 7.332z" />
+                    </g>
+                </svg>
             </div>
 
         </div>
@@ -65,7 +70,7 @@
         </nav>
 
         <div class="slides">
-            <div class="slide" id="1">
+            <!-- <div class="slide" id="1">
                 <div class="content first-content">
                     <div class="container-fluid">
                         <div class="col-md-4">
@@ -74,20 +79,8 @@
                         </div>
                         <div class="col-md-8">
                             <h2>Tanushri Dhote</h2>
-                            <!-- <p>Lorem ipsum <em>dolor sit amet</em>, consectetur adipiscing elit. <em>Sed vehicula blandit augue,</em> eu maximus odio tempus vitae.</p> -->
-                            <p> Motivated <em>MERN Stack Developer</em> with 2
-                                years of experience in building
-                                dynamic <em> web applications.</em> Proficient
-                                in <em>MongoDB, Express.js, React, and
-                                    Node.js,</em> with expertise in both
-                                <em>front-end and back-end development.</em>
-                                Skilled at collaborating with cross-functional
-                                teams to deliver
-                                high-quality software solutions. Seeking to
-                                contribute technical
-                                expertise and passion for MERN stack development
-                                to a growth-oriented
-                                company.</p>
+                                <p>I'm mern stack Developer</p>     
+                                <p>I'm mern react Developer</p>                           
                             <div class="main-btn"><a href="#2">Read
                                     More</a></div>
                             <div class="fb-btn"><a
@@ -96,31 +89,97 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+            <div class="slide" id="1">
+                <div class="content first-content">
+                    <div class="container-fluid">
+                        <div class="col-md-4">
+                            <div class="author-image">
+                                <img src="img/profile.jpg" alt>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <h2>Tanushri Dhote</h2>
+                            <h3 style="color: aliceblue;"><strong>Hi.. I am
+                                </strong> <strong>
+                                    <p id="typing-text"
+                                        style="font-size: 15px; padding: 5px;"></p>
+                                </strong> <!-- Typing effect here --></h3>
+
+                            <div class="main-btn">
+                                <a href="#2">Read More</a>
+                            </div>
+                            <div class="fb-btn">
+                                <a
+                                    href="https://www.linkedin.com/in/tanushri-dhote-b4ab15298/"
+                                    target="_blank">Linked
+                                    In</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <script>
+            const texts = ["MERN Stack Developer", "React Developer", "Front-End Developer", "Back-End Developer", "Full Stack Developer"];
+            let index = 0;
+            let charIndex = 0;
+            let currentText = "";
+            let isDeleting = false;
+
+            function typeEffect() {
+                if (!isDeleting && charIndex <= texts[index].length) {
+                    currentText = texts[index].substring(0, charIndex);
+                    charIndex++;
+                } else if (isDeleting && charIndex >= 0) {
+                    currentText = texts[index].substring(0, charIndex);
+                    charIndex--;
+                }
+
+                document.getElementById("typing-text").textContent = currentText;
+
+                let speed = isDeleting ? 100 : 150;
+
+                if (!isDeleting && charIndex === texts[index].length) {
+                    speed = 1000;
+                    isDeleting = true;
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    index = (index + 1) % texts.length;
+                    speed = 500;
+                }
+
+                setTimeout(typeEffect, speed);
+            }
+
+            typeEffect();
+        </script>
+
             <div class="slide" id="2">
                 <div class="content second-content">
                     <div class="container-fluid">
                         <div class="col-md-6">
                             <div class="left-content">
                                 <h2>About ME</h2>
-                                <!--  <p>Please tell your friends about templatemo website. A variety of free CSS templates are available for immediate downloads.</p> 
-                            <p>Phasellus vitae faucibus orci. Etiam eleifend orci sed faucibus semper. Cras varius dolor et augue fringilla, eu commodo sapien iaculis. Donec eget dictum tellus. <a href="#">Curabitur</a> a interdum diam. Nulla vestibulum porttitor porta.</p>
-                            <p>Nulla vitae interdum libero, vel posuere ipsum. Phasellus interdum est et dapibus tempus. Vestibulum malesuada lorem condimentum mauris ornare dapibus. Curabitur tempor ligula et <a href="#">placerat</a> molestie.</p>
-                            <p>Aliquam efficitur eu purus in interdum. <a href="#">Etiam tincidunt</a> magna ex, sit amet lobortis felis bibendum id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p> -->
                                 <p> Motivated <em>MERN Stack Developer</em> with
-                                    2 years of experience in building
+                                    2
+                                    years of experience in building
                                     dynamic <em> web applications.</em>
-                                    Proficient in <em>MongoDB, Express.js,
-                                        React, and
+                                    Proficient
+                                    in <em>MongoDB, Express.js, React, and
                                         Node.js,</em> with expertise in both
                                     <em>front-end and back-end development.</em>
                                     Skilled at collaborating with
-                                    cross-functional teams to deliver
+                                    cross-functional
+                                    teams to deliver
                                     high-quality software solutions. Seeking to
                                     contribute technical
                                     expertise and passion for MERN stack
-                                    development to a growth-oriented
-                                    company.</p>
+                                    development
+                                    to a growth-oriented
+                                    company.
+                                </p>
                                 <div class="main-btn">
                                     <a
                                         href="https://github.com/tanushripsk?tab=repositories">GitHub</a>
@@ -184,8 +243,7 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <div class="left-image">
-                                                    <img
-                                                        src="img/LMS.jpg"
+                                                    <img src="img/LMS.jpg"
                                                         alt="second service">
                                                 </div>
                                             </div>
@@ -228,13 +286,14 @@
                                 <div class="item">
                                     <div class="thumb">
                                         <a href="img/prashantkadhao-big.png"
-                                            data-lightbox="image-1"><div
-                                                class="hover-effect">
+                                            data-lightbox="image-1">
+                                            <div class="hover-effect">
                                                 <div class="hover-content">
                                                     <h2>prashantkadhao.com</h2>
                                                     <p>Personal Portfolio</p>
                                                 </div>
-                                            </div></a>
+                                            </div>
+                                        </a>
                                         <div class="image">
                                             <img
                                                 src="img/prashantkadhao-small.png">
@@ -246,8 +305,8 @@
                                 <div class="item">
                                     <div class="thumb">
                                         <a href="img/cosmenova-big.png"
-                                            data-lightbox="image-1"><div
-                                                class="hover-effect">
+                                            data-lightbox="image-1">
+                                            <div class="hover-effect">
                                                 <div class="hover-content">
                                                     <h2>cosmenova.in/</h2>
                                                     <p>high performing skincare
@@ -257,7 +316,8 @@
                                                         experts, and scientists
                                                         .</p>
                                                 </div>
-                                            </div></a>
+                                            </div>
+                                        </a>
                                         <div class="image">
                                             <img src="img/cosmenova-small.png">
                                         </div>
@@ -268,14 +328,15 @@
                                 <div class="item">
                                     <div class="thumb">
                                         <a href="img/LMS-big.png"
-                                            data-lightbox="image-1"><div
-                                                class="hover-effect">
+                                            data-lightbox="image-1">
+                                            <div class="hover-effect">
                                                 <div class="hover-content">
                                                     <h2>LMS</h2>
                                                     <p>Learning Management
                                                         System</p>
                                                 </div>
-                                            </div></a>
+                                            </div>
+                                        </a>
                                         <div class="image">
                                             <img src="img/LMS-small.png">
                                         </div>
@@ -286,15 +347,16 @@
                                 <div class="item">
                                     <div class="thumb">
                                         <a href="img/jci-big.png"
-                                            data-lightbox="image-1"><div
-                                                class="hover-effect">
+                                            data-lightbox="image-1">
+                                            <div class="hover-effect">
                                                 <div class="hover-content">
                                                     <h2>jcinagpurfortune.in</h2>
                                                     <p>Junior Champer
                                                         International to develop
                                                         Youth</p>
                                                 </div>
-                                            </div></a>
+                                            </div>
+                                        </a>
                                         <div class="image">
                                             <img src="img/jci-small.png">
                                         </div>
@@ -305,14 +367,15 @@
                                 <div class="item">
                                     <div class="thumb">
                                         <a href="img/fortunemall-big.png"
-                                            data-lightbox="image-1"><div
-                                                class="hover-effect">
+                                            data-lightbox="image-1">
+                                            <div class="hover-effect">
                                                 <div class="hover-content">
                                                     <h2>fortunemallnagpur.in</h2>
                                                     <p>Fortune Mall Sitaburdi
                                                         Nagpur</p>
                                                 </div>
-                                            </div></a>
+                                            </div>
+                                        </a>
                                         <div class="image">
                                             <img
                                                 src="img/fortunemall-small.png">
@@ -503,7 +566,7 @@
                     </div> -->
                         <div class="container mt-5">
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-lg-12">
                                     <form id="contactForm"
                                         onsubmit="sendToWhatsApp(event)">
                                         <div class="form-group mb-3">
@@ -572,44 +635,44 @@
             src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
             type="text/javascript"></script>
         <script type="text/javascript">
-    $(document).ready(function() {
+        $(document).ready(function () {
 
-        
 
-        // navigation click actions 
-        $('.scroll-link').on('click', function(event){
-            event.preventDefault();
-            var sectionID = $(this).attr("data-id");
-            scrollToID('#' + sectionID, 750);
+
+            // navigation click actions 
+            $('.scroll-link').on('click', function (event) {
+                event.preventDefault();
+                var sectionID = $(this).attr("data-id");
+                scrollToID('#' + sectionID, 750);
+            });
+            // scroll to top action
+            $('.scroll-top').on('click', function (event) {
+                event.preventDefault();
+                $('html, body').animate({ scrollTop: 0 }, 'slow');
+            });
+            // mobile nav toggle
+            $('#nav-toggle').on('click', function (event) {
+                event.preventDefault();
+                $('#main-nav').toggleClass("open");
+            });
         });
-        // scroll to top action
-        $('.scroll-top').on('click', function(event) {
-            event.preventDefault();
-            $('html, body').animate({scrollTop:0}, 'slow');         
-        });
-        // mobile nav toggle
-        $('#nav-toggle').on('click', function (event) {
-            event.preventDefault();
-            $('#main-nav').toggleClass("open");
-        });
-    });
-    // scroll function
-    function scrollToID(id, speed){
-        var offSet = 0;
-        var targetOffset = $(id).offset().top - offSet;
-        var mainNav = $('#main-nav');
-        $('html,body').animate({scrollTop:targetOffset}, speed);
-        if (mainNav.hasClass("open")) {
-            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
-            mainNav.removeClass("open");
+        // scroll function
+        function scrollToID(id, speed) {
+            var offSet = 0;
+            var targetOffset = $(id).offset().top - offSet;
+            var mainNav = $('#main-nav');
+            $('html,body').animate({ scrollTop: targetOffset }, speed);
+            if (mainNav.hasClass("open")) {
+                mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+                mainNav.removeClass("open");
+            }
         }
-    }
-    if (typeof console === "undefined") {
-        console = {
-            log: function() { }
-        };
-    }
-    function sendToWhatsApp(event) {
+        if (typeof console === "undefined") {
+            console = {
+                log: function () { }
+            };
+        }
+        function sendToWhatsApp(event) {
             event.preventDefault(); // Prevent form from refreshing the page
 
             // Get form data
@@ -620,10 +683,10 @@
 
             // Create WhatsApp message
             const whatsappMessage = `Hello,\n\nYou have a new message:\n\n` +
-                                    `Name: ${name}\n` +
-                                    `Email: ${email}\n` +
-                                    `Subject: ${subject}\n` +
-                                    `Message: ${message}`;
+                `Name: ${name}\n` +
+                `Email: ${email}\n` +
+                `Subject: ${subject}\n` +
+                `Message: ${message}`;
 
             // Your WhatsApp number (with country code, e.g., 91 for India)
             const phoneNumber = "918080724453";
@@ -636,4 +699,5 @@
         }
     </script>
     </body>
+
 </html>
